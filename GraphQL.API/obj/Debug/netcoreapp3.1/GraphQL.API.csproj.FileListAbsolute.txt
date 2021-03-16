@@ -75,3 +75,4 @@ E:\personal\GraphQL.API\GraphQL.API\bin\Debug\netcoreapp3.1\GraphQL.Server.Trans
 E:\personal\GraphQL.API\GraphQL.API\bin\Debug\netcoreapp3.1\GraphQL.Server.Transports.Subscriptions.Abstractions.dll
 E:\personal\GraphQL.API\GraphQL.API\bin\Debug\netcoreapp3.1\GraphQL.SystemTextJson.dll
 E:\personal\GraphQL.API\GraphQL.API\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
+E:\personal\GraphQL.API\GraphQL.API\bin\Debug\netcoreapp3.1\GraphQL.Server.Transports.WebSockets.dll

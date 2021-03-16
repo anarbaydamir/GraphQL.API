@@ -1,5 +1,6 @@
 using GraphQL.API.Data;
 using GraphQL.API.GraphQL;
+using GraphQL.API.GraphQL.Messaging;
 using GraphQL.API.Repositories;
 using GraphQL.API.Repositories.Interface;
 using GraphQL.Server;
@@ -31,8 +32,10 @@ namespace GraphQL.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
             services.AddDbContext<AppDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("AppDb")));
+
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IProductReviewRepository, ProductReviewRepository>();
 
@@ -40,17 +43,22 @@ namespace GraphQL.API
                 s.GetRequiredService));
 
             services.AddSingleton<IDocumentExecuter, DocumentExecuter>();
+
             services.AddScoped<GoodsSchema>();
+            services.AddSingleton<ReviewMessageService>();
 
             services.AddGraphQL()
                 .AddGraphTypes(ServiceLifetime.Scoped)
                 .AddSystemTextJson()
-                .AddDataLoader();
+                .AddDataLoader()
+                .AddWebSockets();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env,AppDbContext dbContext)
         {
+            app.UseWebSockets();
+            app.UseGraphQLWebSockets<GoodsSchema>("/graphql");
             app.UseGraphQL<GoodsSchema>();
             app.UseGraphQLPlayground(new Server.Ui.Playground.GraphQLPlaygroundOptions());
             dbContext.Seed();

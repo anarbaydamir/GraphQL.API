@@ -13,6 +13,8 @@ namespace GraphQL.API.GraphQL
         {
             Query = (IObjectGraphType)provider.GetService(typeof(GoodsQuery));
             Mutation = (IObjectGraphType)provider.GetService(typeof(GoodsMutation));
+            Subscription = (IObjectGraphType)provider.GetService(typeof(GoodsSubscription));
+            
         }
     }
 }

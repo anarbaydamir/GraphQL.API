@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fx90FweOrp+MBgJ0CZl5mkRxZUG6x/tQBCB0plUp9Aokl5SDoC+56MpSHX8Wp9x22V64b9jvYHXhtYPrk8oCEg==",
+  "dgSpecHash": "PTaK+IFtIB5mgnP9ReLBf8Taz9mXQzcVMPAQkzdJ71FGCE2MY7oiA+/LEqan0QHRS1AymHvHouEKL92mwanybw==",
   "success": true,
   "projectFilePath": "E:\\personal\\GraphQL.API\\GraphQL.API\\GraphQL.API.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\a.baydamirov\\.nuget\\packages\\graphql.server.transports.aspnetcore\\4.4.1\\graphql.server.transports.aspnetcore.4.4.1.nupkg.sha512",
     "C:\\Users\\a.baydamirov\\.nuget\\packages\\graphql.server.transports.aspnetcore.systemtextjson\\4.4.1\\graphql.server.transports.aspnetcore.systemtextjson.4.4.1.nupkg.sha512",
     "C:\\Users\\a.baydamirov\\.nuget\\packages\\graphql.server.transports.subscriptions.abstractions\\4.4.1\\graphql.server.transports.subscriptions.abstractions.4.4.1.nupkg.sha512",
+    "C:\\Users\\a.baydamirov\\.nuget\\packages\\graphql.server.transports.websockets\\4.4.1\\graphql.server.transports.websockets.4.4.1.nupkg.sha512",
     "C:\\Users\\a.baydamirov\\.nuget\\packages\\graphql.server.ui.playground\\4.4.1\\graphql.server.ui.playground.4.4.1.nupkg.sha512",
     "C:\\Users\\a.baydamirov\\.nuget\\packages\\graphql.systemtextjson\\3.2.0\\graphql.systemtextjson.3.2.0.nupkg.sha512",
     "C:\\Users\\a.baydamirov\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

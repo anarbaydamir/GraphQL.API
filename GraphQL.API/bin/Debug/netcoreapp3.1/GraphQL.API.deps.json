@@ -27,6 +27,7 @@
           "GraphQL": "3.3.2",
           "GraphQL.Server.Transports.AspNetCore": "4.4.1",
           "GraphQL.Server.Transports.AspNetCore.SystemTextJson": "4.4.1",
+          "GraphQL.Server.Transports.WebSockets": "4.4.1",
           "GraphQL.Server.Ui.Playground": "4.4.1",
           "Microsoft.EntityFrameworkCore": "5.0.4",
           "Microsoft.EntityFrameworkCore.Design": "5.0.4",
@@ -417,6 +418,21 @@
         },
         "compile": {
           "lib/netstandard2.0/GraphQL.Server.Transports.Subscriptions.Abstractions.dll": {}
+        }
+      },
+      "GraphQL.Server.Transports.WebSockets/4.4.1": {
+        "dependencies": {
+          "GraphQL.Server.Transports.Subscriptions.Abstractions": "4.4.1",
+          "Microsoft.Extensions.Logging": "5.0.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/GraphQL.Server.Transports.WebSockets.dll": {
+            "assemblyVersion": "4.4.1.0",
+            "fileVersion": "4.4.1.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/GraphQL.Server.Transports.WebSockets.dll": {}
         }
       },
       "GraphQL.Server.Ui.Playground/4.4.1": {
@@ -3163,6 +3179,13 @@
       "sha512": "sha512-2nqJFVOX3yBZ3c18tdINBd0sI8mzP99iweQy0fYrjqe1ZrpN35CHcfP7+qJURGkCnxmZzRVOGBu+Q4DlIlWAiw==",
       "path": "graphql.server.transports.subscriptions.abstractions/4.4.1",
       "hashPath": "graphql.server.transports.subscriptions.abstractions.4.4.1.nupkg.sha512"
+    },
+    "GraphQL.Server.Transports.WebSockets/4.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sOQ0ekyp9O56ySnEn34lynXE4pK8Dm1QKyW1df5hik5/NNekjwRlv481nXLt6mpe1ojUUer09D4FV3N88vN/3g==",
+      "path": "graphql.server.transports.websockets/4.4.1",
+      "hashPath": "graphql.server.transports.websockets.4.4.1.nupkg.sha512"
     },
     "GraphQL.Server.Ui.Playground/4.4.1": {
       "type": "package",
