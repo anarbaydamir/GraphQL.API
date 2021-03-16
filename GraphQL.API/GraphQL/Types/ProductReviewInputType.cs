@@ -6,6 +6,17 @@ using System.Threading.Tasks;
 
 namespace GraphQL.API.GraphQL.Types
 {
+    //    mutation($review: reviewInput!)
+    //    {
+    //        createReview(review: $review) { id title review}
+    //    }
+    //    {
+    //  "review": {
+    //  "title":"Hello test",
+    //  "productId": 1
+    //}
+    //}
+    //sample for add request
     public class ProductReviewInputType:InputObjectGraphType
     {
         public ProductReviewInputType()

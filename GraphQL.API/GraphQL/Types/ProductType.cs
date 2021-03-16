@@ -9,6 +9,15 @@ using System.Threading.Tasks;
 
 namespace GraphQL.API.GraphQL.Types
 {
+    //    {
+    //  products{
+    //     name type
+    //    reviews{
+    //      id title
+    //    }
+    //  }
+    //}
+    //sample for get request
     public class ProductType : ObjectGraphType<Product>
     {
         public ProductType(IProductReviewRepository productReviewRepository,
