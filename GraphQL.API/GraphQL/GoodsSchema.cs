@@ -12,6 +12,7 @@ namespace GraphQL.API.GraphQL
         public GoodsSchema(IServiceProvider provider):base(provider)
         {
             Query = (IObjectGraphType)provider.GetService(typeof(GoodsQuery));
+            Mutation = (IObjectGraphType)provider.GetService(typeof(GoodsMutation));
         }
     }
 }
