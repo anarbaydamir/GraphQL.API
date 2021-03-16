@@ -21,5 +21,10 @@ namespace GraphQL.API.Repositories
         {
             return await dbContext.Products.ToListAsync();
         }
+
+        public async Task<Product> GetById(int id)
+        {
+            return await dbContext.Products.FirstOrDefaultAsync(p => p.Id == id);
+        }
     }
 }

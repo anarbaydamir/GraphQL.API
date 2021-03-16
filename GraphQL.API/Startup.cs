@@ -44,7 +44,8 @@ namespace GraphQL.API
 
             services.AddGraphQL()
                 .AddGraphTypes(ServiceLifetime.Scoped)
-                .AddSystemTextJson();
+                .AddSystemTextJson()
+                .AddDataLoader();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

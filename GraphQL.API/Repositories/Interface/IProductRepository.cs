@@ -9,5 +9,6 @@ namespace GraphQL.API.Repositories.Interface
     public interface IProductRepository
     {
         Task<IEnumerable<Product>> GetAll();
+        Task<Product> GetById(int id);
     }
 }

@@ -27,7 +27,11 @@ namespace GraphQL.API.Repositories
 
         public async Task<IEnumerable<ProductReview>> GetForProduct(int productId)
         {
-            return await dbContext.ProductReviews.Where(pr => pr.ProductId == productId).ToListAsync();
+            var review = await dbContext.ProductReviews.Where(pr => pr.ProductId == productId).ToListAsync();
+            if (!review.Any())
+                return null;
+
+            return review;
         }
 
         public async Task<ILookup<int, ProductReview>> GetForProducts(IEnumerable<int> products)
